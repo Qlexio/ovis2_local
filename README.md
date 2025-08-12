@@ -6,8 +6,9 @@ This tutorial helps to install both **AIDC-AI/Ovis** package running the model a
 
 The package and the model(s) should be installed in different folders.
 
-> **:warning:** Even if running locally, it seems that running *Ovis2 server* opens 2 TCP connections toward US datacenters.
+> **:warning:** Even if running locally, it seems that running *Ovis2 server* opens 3 TCP connections toward US datacenters.
   This may lead to potential security issues.
+  * [ ] Monitor TCP traffic with Wireshark
 
 
 ## 1. AIDC-AI/Ovis package
@@ -20,7 +21,7 @@ Follow install instructions:
 
 https://github.com/AIDC-AI/Ovis/?tab=readme-ov-file#install
 
-The usage of [UV from Astral](https://docs.astral.sh/uv/) is highly recommanded for the virtualenv creation and packages installation as they are heavy ones (`conda` is going to take forever).
+The usage of [UV from Astral](https://docs.astral.sh/uv/) is highly recommended for the virtual environment creation and packages installation as they are heavy ones (`conda` is going to take forever...). For `pip` usage, the commands are quite the same. Remove `uv` to use standard pip.
 
 
 ## 2. Download the model's weights
@@ -40,12 +41,12 @@ git clone https://huggingface.co/AIDC-AI/Ovis2-1B
 
 ## 3. Running the model
 
-Activate the virtualenv created in *1. AIDC-AI/Ovis package*.
+Activate the virtual environment created in *1. AIDC-AI/Ovis package*.
 
-First, check ***setuptools*** is installed in the virtualenv else pip install it:
+First, check ***setuptools*** is installed in the virtual environment else pip install it:
 ```
-(uv) pip list | grep setuptools
-(uv) pip install setuptools
+uv pip list | grep setuptools
+uv pip install setuptools
 ```
 
 Second, check the presence of ***Nvidia CUDA Compiler***
