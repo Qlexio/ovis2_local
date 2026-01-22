@@ -1,6 +1,6 @@
 # Running Ovis2 locally without Huggingface
 
-**Specila thanks to [Sonia Tabti](https://www.linkedin.com/in/sonia-tabti-phd-b6993835/)**
+**Special thanks to [Sonia Tabti](https://www.linkedin.com/in/sonia-tabti-phd-b6993835/)**
 
 ## Notice:
 
