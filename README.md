@@ -1,5 +1,7 @@
 # Running Ovis2 locally without Huggingface
 
+**Specila thanks to [Sonia Tabti](https://www.linkedin.com/in/sonia-tabti-phd-b6993835/)**
+
 ## Notice:
 
 This tutorial helps to install both **AIDC-AI/Ovis** package running the model and the model itself.
